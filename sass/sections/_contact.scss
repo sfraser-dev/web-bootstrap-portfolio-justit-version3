@@ -1,0 +1,10 @@
+@use "../customized_bootstrap" as *;
+
+.my-footer-div { 
+    font-size: 1.1rem;
+    background-color: $palette-primary;
+}
+
+.my-footer-container-fluid {
+    padding: 1% 6%;
+}

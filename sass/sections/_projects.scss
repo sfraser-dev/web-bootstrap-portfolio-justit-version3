@@ -1,0 +1,24 @@
+@use "../customized_bootstrap" as *;
+
+.my-badge-container {
+    margin-top: 30px;
+}
+
+@mixin my-badge {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 4px;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.my-badge-stripe-colored {
+    @include my-badge;
+    border-color:  $palette-light;
+}
+
+.my-badge-stripe-white {
+    @include my-badge;
+    border-color:  $palette-dark;
+}
+

@@ -1,0 +1,76 @@
+@use "customized_bootstrap" as *;
+
+@use "sections/navbar";
+@use "sections/projects";
+@use "sections/contact";
+
+body {
+    text-align: center;
+}
+
+@mixin stripe-padding {
+    padding: 6%;
+}
+
+.stripe-colored {
+    background-color: $palette-primary;
+    color: $palette-light;
+    @include stripe-padding();
+}
+
+.stripe-white {
+    background-color: $palette-light;
+    color: $palette-dark;
+    @include stripe-padding();
+}
+
+.common-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 210px;
+    margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+    .med-center-xy{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .common-image {
+        margin-bottom: 0;
+    }
+    .my-nav-div { 
+        font-size: 1.15rem;
+    }
+    
+    body {
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 880px) {
+    .common-image {
+        width: 300px;
+        height: 250px;
+    }
+    .my-nav-div { 
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .common-image {
+        width: 350px;
+        height: 290px;
+    }
+    .my-nav-div { 
+        font-size: 1.25rem;
+    }
+}
+
+nav li a.nav-link {
+    color:red;
+}
