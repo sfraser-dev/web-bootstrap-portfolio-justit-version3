@@ -6,7 +6,7 @@
 # me
 *.7z
 *.zip
-css/
+assets/css/
 *.prev
 
 # Node artifact files
