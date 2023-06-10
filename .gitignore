@@ -8,6 +8,7 @@
 *.zip
 assets/css/
 *.prev
+fontawesome-free-6.4.0-web/
 
 # Node artifact files
 node_modules/
