@@ -33,6 +33,15 @@ body {
     margin-bottom: 30px;
 }
 
+@media only screen and (min-width: 650px) {
+    // footer going from icon only to icon with text
+    .my-footer-list-item-text {
+        display: inline-block;
+    }
+    .my-footer-div { 
+        font-size: 1.1rem;
+    }
+}
 @media only screen and (min-width: 768px) {
     .med-center-xy{
         display: flex;
@@ -42,7 +51,7 @@ body {
     .common-image {
         margin-bottom: 0;
     }
-    .my-nav-div .my-footer-div { 
+    .my-nav-div .my-footer-div{ 
         font-size: 1.15rem;
     }
     body {
@@ -65,7 +74,7 @@ body {
         width: 350px;
         height: 290px;
     }
-    .my-nav-div .my-footer-div { 
+    .my-nav-div .my-footer-div{ 
         font-size: 1.25rem;
     }
 }
